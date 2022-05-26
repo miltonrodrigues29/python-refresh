@@ -9,4 +9,3 @@ n=[]
 for i in l:
     n.append(i.strip())
 print(n)
-
