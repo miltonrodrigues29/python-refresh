@@ -6,6 +6,8 @@ class Student:
          self.name = name
          self.rollno = rollno
          self.lap = self.Laptop()
+         
+        
     
     def show(self):
         print(self.name, self.rollno)
