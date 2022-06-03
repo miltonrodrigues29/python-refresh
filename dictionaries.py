@@ -1,73 +1,97 @@
-import this
+# car = {
+# "brand": "Ford",
+# "model": "Mustang",
+# "year": 1964
+# }
+
+# x = car.values()
+# print(x)
+# car["color"] = "red"
+# car["model"]="hatchback"
+# print(car)
+
+# y = car.keys()
+# print(y)
+
+# if "model" in car:
+#     print("Present")
+
+# car.update({"year": 2020})
+# car["model1"] = "sedan"
+# print(car)
 
 
-car = {
-"brand": "Ford",
-"model": "Mustang",
-"year": 1964
-}
+# m=car.get("model")
+# print(m)
 
-x = car.values()
-print(x)
-car["color"] = "red"
-car["model"]="hatchback"
-print(car)
+# f = car.items() #converts dic to list of tuples
+# print(f)
 
-y = car.keys()
-print(y)
+# car["year"] = 2020
+# print(car)
+# print(f)
 
-if "model" in car:
-    print("Present")
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
 
-car.update({"year": 2020})
-car["model1"] = "sedan"
-print(car)
+# thisdict.popitem()
+# thisdict.pop("brand")
 
+# print(thisdict)
 
-m=car.get("model")
-print(m)
+# for x in thisdict:
+#     print(thisdict[x])
 
-f = car.items() #converts dic to list of tuples
-print(f)
+# thisdict = {
 
-car["year"] = 2020
-print(car)
-print(f)
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
 
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+# for x in thisdict.values():
+#     print(x)
 
-thisdict.popitem()
-thisdict.pop("brand")
+# for y in thisdict.keys():
+#     print(y)
 
-print(thisdict)
+# for x, y in thisdict.items():
+#     print(x,y)
 
-for x in thisdict:
-    print(thisdict[x])
-
-thisdict = {
-
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-
-for x in thisdict.values():
-    print(x)
-
-for y in thisdict.keys():
-    print(y)
-
-for x, y in thisdict.items():
-    print(x,y)
-
-newdict = thisdict.copy()
-print(newdict)
+# newdict = thisdict.copy()
+# print(newdict)
 
 
 
-#nested dictionaries
+# #nested dictionaries
+
+# airports = dict([
+#     ("LHR", "London Heathrow"),
+#     ("LGW", "London Gatwick")
+# ])
+# print(airports)
+
+keys = ["IST", "SAW", "STN"]
+values = ["Istanbul Airport", "Sabiha Gokcen International Airport", "London Stansted Airport"]
+
+dictionary = dict(zip(keys,values))
+print(dictionary)
+
+
+# dictionary.pop("IST")
+print(dictionary)
+
+
+print(dictionary.get("IST")) #does not throw error if not found
+print(dictionary["IST"]) #throws error if not found
+
+print(dictionary.items())
+print(dictionary.clear())
+print(dictionary)
+
+
+
 

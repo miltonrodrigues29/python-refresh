@@ -1,4 +1,3 @@
-from hashlib import new
 import this
 
 
@@ -38,4 +37,6 @@ for i in range(len(thislist)):
 newlist =[]
 newlist=[x for x in thislist if "a" in x]
 print(newlist)
+print(newlist.count("mango"))
+
 

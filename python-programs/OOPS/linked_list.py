@@ -20,6 +20,10 @@
 
 
 
+from cmath import log10
+from hashlib import new
+
+
 class Node:
     def __init__(self,data="None"):
         self.data = data
@@ -49,12 +53,34 @@ node2.nextVal = node3
 #     iter = iter.nextVal
     
 
-if __name__ == "main":
+if __name__ == "__main__":
     n = int(input("Enter the number of nodes in linked list"))
     if n==0:
         print("Linked List Should have atleast one element")
     else:
+        ll = SLinkedList()
+        temp = input("Enter data for node 1")
+        temp = Node(temp)
+        ll.headval= temp
+        iter = ll.headval
+        for i in range(2,n+1):
+            
+            new_node = input("Enter data for node ")
+            while(iter.nextVal!=None):
+                iter = iter.nextVal
+            
+            iter.nextVal = new_node
+    
+    trace = ll.headval
+    while(trace.nextVal!=None):
+        print(trace.data,"->")  
+        trace= trace.nextVal
 
+            
+
+            
+
+            
     
 
   
